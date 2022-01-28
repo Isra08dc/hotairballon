@@ -29,18 +29,22 @@ function draw() {
 
   if(keyDown(LEFT_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.velocityX=-8
     //escribe el código para mover el globo aerostático en dirección hacia la izquierda
   }
   else if(keyDown(RIGHT_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.velocityX=8
     //escribe el código para mover el globo aerostático en dirección hacia la derecha
   }
   else if(keyDown(UP_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.velocityY=-8
     //escribe el código para mover el globo aerostático en dirección ascendente
   }
   else if(keyDown(DOWN_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.velocityY=8
     //escribe el código para mover el globo aerostático en dirección descendente
   }
 
