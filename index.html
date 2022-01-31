@@ -6,27 +6,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
     
-<!-- El SDK de Firebase JS principal siempre es obligatorio y se debe figurar primero -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
-<!-- TODO: Agrega SDK para los productos de Firebase que quieras usar
+<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // La configuración de Firebase de tu aplicación web
-  var firebaseConfig = {
-    apiKey: "AIzaSyBNete7_S-J1gy_e--bJo8dg2b6UUoVnaM",
-    authDomain: "hotairballoon-3bf15.firebaseapp.com",
-    databaseURL: "https://hotairballoon-3bf15-default-rtdb.firebaseio.com",
-    projectId: "hotairballoon-3bf15",
-    storageBucket: "hotairballoon-3bf15.appspot.com",
-    messagingSenderId: "626683535337",
-    appId: "1:626683535337:web:a8da905294cda5d22cf578"
-  };
-
-  // Inicializar Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+     <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyD-IONDmvr1XjbPWCCFR2VCd4mPV__b5mk",
+        authDomain: "globo-5d5e1.firebaseapp.com",
+        databaseURL: "https://globo-5d5e1-default-rtdb.firebaseio.com",
+        projectId: "globo-5d5e1",
+        storageBucket: "globo-5d5e1.appspot.com",
+        messagingSenderId: "300339589214",
+        appId: "1:300339589214:web:6da8dd7f8b66f52d5a84cf"
+      };
+    
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+    </script>
+     
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <meta charset="utf-8">
 
