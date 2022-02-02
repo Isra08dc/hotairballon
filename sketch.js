@@ -1,7 +1,7 @@
 var balloon,balloonImage1,balloonImage2;
 // crea aquí la base de datos y la variable de posición 
-var balloobPosition = database.ref('ball/position');
-balloonPosition.on("value", readPosition, showError);
+//var balloobPosition = database.ref('ball/position');
+//balloonPosition.on("value", readPosition, showError);
 
 function preload(){
    bg =loadImage("cityImage.png");
@@ -19,7 +19,8 @@ function setup() {
   balloon=createSprite(250,450,150,150);
   balloon.addAnimation("hotAirBalloon",balloonImage1);
   balloon.scale=0.5;
-
+  balloonHeight = database.ref('ballon/height'); 
+  balloonHeight.on("value", readHeight, showError);
   textSize(20); 
 }
 
