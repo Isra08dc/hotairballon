@@ -19,7 +19,7 @@ function setup() {
   balloon=createSprite(250,450,150,150);
   balloon.addAnimation("hotAirBalloon",balloonImage1);
   balloon.scale=0.5;
-  balloonHeight = database.ref('ballon/height'); 
+  balloonHeight = database.ref('balloon/height'); 
   balloonHeight.on("value", readHeight, showError);
   textSize(20); 
 }
@@ -41,13 +41,13 @@ function draw() {
   else if(keyDown(UP_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
     updateHeight(0,-10);
-    balloon.scale=balloon.scale -0.001;
+    balloon.scale=balloon.scale -0.005 ;
     //escribe el código para mover el globo aerostático en dirección ascendente
   }
   else if(keyDown(DOWN_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
     updateHeight(0,10);
-    balloon.scale=balloon.scale +0.001;
+    balloon.scale=balloon.scale +0.005;
     //escribe el código para mover el globo aerostático en dirección descendente
   }
 
